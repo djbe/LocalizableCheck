@@ -53,6 +53,15 @@ By default, for base internationalisation strings, the tool will copy the value 
 LocalizableCheck --placeholder "UNTRANSLATED" "Application/Resources"
 ```
 
+## Creating a release
+
+Just run the following command:
+
+```bash
+xcrun swift build -c release --static-swift-stdlib
+```
+
+The built binary will be at `./.build/x86_64-apple-macosx10.10/release/LocalizableCheck`.
 
 ## Author
 
